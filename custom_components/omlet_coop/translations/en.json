@@ -1,0 +1,148 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Add Omlet Smart Coop Autodoor",
+        "description": "Enter the device ID from its MQTT topics, such as the segment in device/<device_id>/status/door/state.",
+        "data": {
+          "device_id": "Device ID"
+        }
+      }
+    },
+    "error": {
+      "invalid_device_id": "Enter a device ID without MQTT topic separators or wildcards."
+    },
+    "abort": {
+      "already_configured": "This device is already configured."
+    }
+  },
+  "entity": {
+      "binary_sensor": {
+        "connected": {
+          "name": "Reported connected"
+        },
+        "recovery_app_running": {
+          "name": "Recovery app running"
+        },
+        "door_fault": {
+          "name": "Door fault"
+        },
+        "light_fault": {
+          "name": "Light fault"
+        },
+        "open_pending": {
+          "name": "Open command pending"
+        },
+        "close_pending": {
+          "name": "Close command pending"
+        },
+        "stop_pending": {
+          "name": "Stop command pending"
+        }
+      },
+      "cover": {
+        "door": {
+          "name": "Door"
+        }
+      },
+      "light": {
+        "light": {
+          "name": "Light"
+        }
+      },
+      "number": {
+        "open_light_level": {
+          "name": "Open light level"
+        },
+        "close_light_level": {
+          "name": "Close light level"
+        },
+        "open_delay": {
+          "name": "Open delay"
+        },
+        "close_delay": {
+          "name": "Close delay"
+        },
+        "stay_alive": {
+          "name": "Stay alive"
+        }
+      },
+      "select": {
+        "door_mode": {
+          "name": "Door mode",
+          "options": {
+            "time": "Time",
+            "manual": "Manual",
+            "light": "Light"
+          }
+        }
+      },
+      "sensor": {
+        "battery": {
+          "name": "Battery"
+        },
+        "wifi_signal": {
+          "name": "Wi-Fi signal"
+        },
+        "wifi_power_level": {
+          "name": "Wi-Fi power level"
+        },
+        "light_level": {
+          "name": "Door light level"
+        },
+        "uptime": {
+          "name": "Uptime"
+        },
+        "door_time_of_flight": {
+          "name": "Door time of flight"
+        },
+        "power_source": {
+          "name": "Power source"
+        },
+        "last_open": {
+          "name": "Last opened"
+        },
+        "last_close": {
+          "name": "Last closed"
+        },
+        "reset_reason": {
+          "name": "Reset reason"
+        },
+        "wakeup_reason": {
+          "name": "Wakeup reason"
+        },
+        "disconnect_reason": {
+          "name": "Disconnect reason"
+        },
+        "bluetooth_signal": {
+          "name": "Bluetooth signal"
+        },
+        "wifi_ssid": {
+          "name": "Wi-Fi SSID"
+        },
+        "firmware_current": {
+          "name": "Current firmware"
+        },
+        "firmware_previous": {
+          "name": "Previous firmware"
+        },
+        "firmware_last_check": {
+          "name": "Firmware last check"
+        },
+        "device_timezone": {
+          "name": "Device time zone"
+        },
+        "device_datetime": {
+          "name": "Device date and time"
+        }
+      },
+      "time": {
+        "open_time": {
+          "name": "Open time"
+        },
+        "close_time": {
+          "name": "Close time"
+        }
+    }
+  }
+}

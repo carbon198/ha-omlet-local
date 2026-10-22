@@ -1,0 +1,10 @@
+{
+  "domain": "omlet_coop",
+  "name": "Omlet Smart Coop Autodoor",
+  "codeowners": [],
+  "config_flow": true,
+  "dependencies": ["mqtt"],
+  "documentation": "https://www.home-assistant.io/integrations/mqtt/",
+  "iot_class": "local_push",
+  "version": "0.1.0"
+}
